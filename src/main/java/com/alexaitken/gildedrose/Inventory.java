@@ -3,26 +3,25 @@
 import java.util.ArrayList;
 import java.util.Collection;
 
-import com.alexaitken.gildedrose.items.AbstractItem;
-import com.alexaitken.gildedrose.items.AgedBrieItem;
-import com.alexaitken.gildedrose.items.BackstagePassesItem;
-import com.alexaitken.gildedrose.items.ConjuredManaCakeItem;
-import com.alexaitken.gildedrose.items.ElixirOfTheMongooseItem;
-import com.alexaitken.gildedrose.items.FiveDexterityVestItem;
-import com.alexaitken.gildedrose.items.SulfurasHandOfRagnarosItem;
+import com.alexaitken.gildedrose.impl.AgedBrieItem;
+import com.alexaitken.gildedrose.impl.BackstagePassesItem;
+import com.alexaitken.gildedrose.impl.ConjuredManaCakeItem;
+import com.alexaitken.gildedrose.impl.ElixirOfTheMongooseItem;
+import com.alexaitken.gildedrose.impl.FiveDexterityVestItem;
+import com.alexaitken.gildedrose.impl.SulfurasHandOfRagnarosItem;
 
 public class Inventory {
 
-	private Collection<AbstractItem> items;
+	private Collection<ItemDecorator> items;
 
-	public Inventory(Collection<AbstractItem> items) {
+	public Inventory(Collection<ItemDecorator> items) {
 		super();
 		this.items = items;
 	}
 
 	public Inventory() {
 		super();
-		items = new ArrayList<AbstractItem>();
+		items = new ArrayList<ItemDecorator>();
 		items.add(new FiveDexterityVestItem(10, 20));
 		items.add(new AgedBrieItem(2,0));
 		items.add(new ElixirOfTheMongooseItem(5, 7));
@@ -33,7 +32,7 @@ public class Inventory {
 	}
 
 	public void updateQuality() {
-		for(AbstractItem item: this.items){
+		for(ItemDecorator item: this.items){
 			item.update();
 		}
 //		for (int i = 0; i < items.length; i++) {
