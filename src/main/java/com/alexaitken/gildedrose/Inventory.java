@@ -15,12 +15,10 @@ public class Inventory {
 	private Collection<ItemDecorator> items;
 
 	public Inventory(Collection<ItemDecorator> items) {
-		super();
 		this.items = items;
 	}
 
 	public Inventory() {
-		super();
 		items = new ArrayList<ItemDecorator>();
 		items.add(new FiveDexterityVestItem(10, 20));
 		items.add(new AgedBrieItem(2,0));

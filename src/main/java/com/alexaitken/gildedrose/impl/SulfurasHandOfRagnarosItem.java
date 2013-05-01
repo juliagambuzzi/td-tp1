@@ -1,7 +1,7 @@
 package com.alexaitken.gildedrose.impl;
 
 import com.alexaitken.gildedrose.ItemDecorator;
-import com.alexaitken.gildedrose.update.SulfuraItemUpdateStrategy;
+import com.alexaitken.gildedrose.update.impl.SulfuraItemUpdateStrategy;
 
 
 

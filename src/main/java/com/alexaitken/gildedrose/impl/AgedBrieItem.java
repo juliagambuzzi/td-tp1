@@ -1,7 +1,7 @@
 package com.alexaitken.gildedrose.impl;
 
 import com.alexaitken.gildedrose.ItemDecorator;
-import com.alexaitken.gildedrose.update.AgedBrieItemUpdateStrategy;
+import com.alexaitken.gildedrose.update.impl.AgedBrieItemUpdateStrategy;
 
 
 public class AgedBrieItem extends ItemDecorator {

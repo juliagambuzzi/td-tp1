@@ -1,7 +1,7 @@
-package com.alexaitken.gildedrose.update;
+package com.alexaitken.gildedrose.update.impl;
 
 import com.alexaitken.gildedrose.Item;
-import com.alexaitken.gildedrose.ItemUpdateStrategy;
+import com.alexaitken.gildedrose.update.ItemUpdateStrategy;
 
 public class AgedBrieItemUpdateStrategy implements ItemUpdateStrategy {
 

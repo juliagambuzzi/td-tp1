@@ -1,5 +1,7 @@
 package com.alexaitken.gildedrose;
 
+import com.alexaitken.gildedrose.update.ItemUpdateStrategy;
+
 
 public abstract class ItemDecorator extends Item {
 	

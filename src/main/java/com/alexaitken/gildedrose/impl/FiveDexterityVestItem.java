@@ -1,7 +1,7 @@
 package com.alexaitken.gildedrose.impl;
 
 import com.alexaitken.gildedrose.ItemDecorator;
-import com.alexaitken.gildedrose.update.DefaultItemUpdateStrategy;
+import com.alexaitken.gildedrose.update.impl.DefaultItemUpdateStrategy;
 
 
 public class FiveDexterityVestItem extends ItemDecorator {
