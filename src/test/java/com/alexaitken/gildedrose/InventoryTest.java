@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import com.alexaitken.gildedrose.impl.AgedBrieItem;
 import com.alexaitken.gildedrose.impl.BackstagePassesItem;
+import com.alexaitken.gildedrose.impl.ConjuredItem;
 import com.alexaitken.gildedrose.impl.ElixirOfTheMongooseItem;
 import com.alexaitken.gildedrose.impl.SulfurasHandOfRagnarosItem;
 
@@ -54,8 +55,7 @@ public class InventoryTest {
 		Assert.assertTrue(items.iterator().next().getQuality()==50);
 	}
 	
-//	@Test
-	//TODO check this restriction is not checked
+	@Test
 	public void testSulfurasSellInCero(){
 		ItemDecorator item = new SulfurasHandOfRagnarosItem(-1, 10);
 		Collection<ItemDecorator> items = new ArrayList<ItemDecorator>();
@@ -103,6 +103,16 @@ public class InventoryTest {
 		Inventory inventory = new Inventory(items);
 		inventory.updateQuality();
 		Assert.assertTrue(items.iterator().next().getQuality()==0);
+	}
+	
+	@Test
+	public void testConjuredDecressQualityInTwo(){
+		ItemDecorator item = new ConjuredItem(5, 10);
+		Collection<ItemDecorator> items = new ArrayList<ItemDecorator>();
+		items.add(item);
+		Inventory inventory = new Inventory(items);
+		inventory.updateQuality();
+		Assert.assertTrue(items.iterator().next().getQuality()==8);
 	}
 
 }
