@@ -1,4 +1,4 @@
-﻿package com.alexaitken.gildedrose;
+package com.alexaitken.gildedrose;
 
 public class InventoryOLD {
 

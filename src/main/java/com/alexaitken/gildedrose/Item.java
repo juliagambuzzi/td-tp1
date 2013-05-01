@@ -1,6 +1,3 @@
-﻿/**
- * 
- */
 package com.alexaitken.gildedrose;
 
 public class Item {
